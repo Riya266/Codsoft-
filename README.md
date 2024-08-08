@@ -1,8 +1,8 @@
 # Codsoft-
 task 1
-import json
-
-class Task:
+                                                                               
+    import json
+     class Task:
     def __init__(self, description, completed=False):
         self.description = description
         self.completed = completed
@@ -14,7 +14,7 @@ class Task:
     def mark_complete(self):
         self.completed = True
 
-class ToDoList:
+    class ToDoList:
     def __init__(self):
         self.tasks = []
         self.load_tasks()
@@ -60,7 +60,7 @@ class ToDoList:
         except FileNotFoundError:
             self.tasks = []
 
-def main():
+     def main():
     todo_list = ToDoList()
     while True:
         print("\n1. Add Task\n2. View Tasks\n3. Update Task\n4. Delete Task\n5. Mark Task Complete\n6. Exit")
@@ -85,24 +85,25 @@ def main():
         else:
             print("Invalid choice. Try again.")
 
-if __name__ == "__main__":
+     if __name__ == "__main__":
     main()
 task 2
-def add(a, b):
+            
+    def add(a, b):
     return a + b
 
-def subtract(a, b):
+    def subtract(a, b):
     return a - b
 
-def multiply(a, b):
+    def multiply(a, b):
     return a * b
 
-def divide(a, b):
+    def divide(a, b):
     if b == 0:
         return "Error: Division by zero is not allowed."
     return a / b
 
-def main():
+    def main():
     print("Calculator")
 
     # Input numbers
@@ -144,13 +145,14 @@ def main():
     else:
         print(f"{num1} {op_symbol} {num2} = {result}")
 
-if __name__ == "__main__":
+    if __name__ == "__main__":
     main()
-    task 3
-    import random
-import string
+task 3
 
-def generate_password(length):
+    import random
+    import string
+
+     def generate_password(length):
     """Generate a random password of the specified length."""
     # Define the characters to use for the password
     characters = string.ascii_letters + string.digits + string.punctuation
@@ -159,7 +161,7 @@ def generate_password(length):
     password = ''.join(random.choice(characters) for _ in range(length))
     return password
 
-def main():
+    def main():
     print("Password Generator")
 
     # Prompt user to specify the length of the password
@@ -177,7 +179,7 @@ def main():
     password = generate_password(length)
     print(f"Generate password: {password}")
 
-if __name__ == "__main__":
+    if __name__ == "__main__":
     main()
 
 
